@@ -109,7 +109,7 @@ export const personalInfo = [
   {
     id: 9,
     title: 'Github : ',
-    description: 'syagyesh',
+    description: '<a href="https://github.com/syagyesh"> syagyesh </a>',
   },
 
   {
