@@ -16,6 +16,7 @@ const Home = () => {
             typeSpeed: 60,
             backSpeed: 100,
             backDelay: 2000,
+            loop: true,
         });
 
         return () => {
@@ -30,7 +31,7 @@ const Home = () => {
         <div className="home__content">
             <div className="home__data">
                 <h1 className="home__title">
-                    <span>I'm Yagyesh Sharma,</span> <span ref={el}></span>
+                    <span>I'm Yagyesh Sharma,</span> <br /><abbr ref={el}></abbr>
                 </h1>
                 <p className="home__description">
                     I'm basically front-end web developer and learning backend to build my career.

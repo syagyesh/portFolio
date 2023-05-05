@@ -9,10 +9,10 @@ import {
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
-import Work1 from './assets/project-1.jpeg';
-import Work2 from './assets/project-2.jpg';
-import Work3 from './assets/project-3.jpeg';
-import Work4 from './assets/project-4.jpeg';
+import Work1 from './assets/project-1.png';
+import Work2 from './assets/project-2.png';
+import Work3 from './assets/project-3.png';
+import Work4 from './assets/project-4.png';
 import Work5 from './assets/project-5.jpg';
 import Work6 from './assets/project-6.jpg';
 
@@ -131,18 +131,6 @@ export const stats = [
     no: '3',
     title: 'Completed <br /> Projects',
   },
-
-  // {
-  //   id: 3,
-  //   no: '81+',
-  //   title: 'Happy <br /> Customers',
-  // },
-
-  // {
-  //   id: 4,
-  //   no: '53+',
-  //   title: ' Awards <br /> Won',
-  // },
 ];
 
 export const resume = [
@@ -150,54 +138,54 @@ export const resume = [
     id: 1,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2022 - PRESENT',
-    title: 'Web Developer <span> Envato </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
+    year: '2022',
+    title: 'Sports Coordinator <span> Government Engineering College Jhalawar </span>',
+    desc: 'Participated as a Chess Coordinator in Intra Collge Sports Competition',
   },
 
   {
     id: 2,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2013 - 2018',
-    title: 'UI/UX Designer <span> Themeforest </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    year: '2022',
+    title: 'Front-End Developer <span> Bits to Bytes Robotics </span>',
+    desc: 'Done internship in Front-End Development with BBR ltd.',
   },
 
   {
     id: 3,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2005 - 2013',
-    title: 'Consultant <span> Videohive </span>',
-    desc: 'Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt',
+    year: '2022',
+    title: 'Sports Webpage<span> Government Engineering College Jhalawar </span>',
+    desc: 'Made a Static Sports Webpage for my college in a group.',
   },
 
   {
     id: 4,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2015',
-    title: 'Engineering Degree <span> Oxford University </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore',
+    year: '2020-PRESENT',
+    title: 'Engineering Degree <span> IIT Chandloi </span>',
+    desc: 'Persuing B.Tech in Computer Science and Engineering. Currently in 3rd Year, CGPA: 9.5',
   },
 
   {
     id: 5,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2012',
-    title: 'Master Degree <span> KIEV University </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    year: '2020',
+    title: 'Higher Secondary Education <span> Board of Secondary Education Rajasthan </span>',
+    desc: 'Passed with 91.60%',
   },
 
   {
     id: 6,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2009',
-    title: 'Bachelor Degree <span> Tunis High School </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore',
+    year: '2018',
+    title: 'Secondary Education <span> Board of Secondary Education Rajasthan </span>',
+    desc: 'Passed with 93.50%',
   },
 ];
 
@@ -216,7 +204,7 @@ export const skills = [
 
   {
     id: 3,
-    title: 'Css',
+    title: 'CSS',
     percentage: '80',
   },
 
@@ -229,25 +217,61 @@ export const skills = [
   {
     id: 5,
     title: 'Wordpress',
-    percentage: '80',
+    percentage: '70',
   },
-
-  // {
-  //   id: 6,
-  //   title: 'Jquery',
-  //   percentage: '50',
-  // },
-
-  // {
-  //   id: 7,
-  //   title: 'Angular',
-  //   percentage: '65',
-  // },
 
   {
     id: 6,
+    title:  'Java',
+    percentage: '60',
+  },
+
+  {
+    id: 7,
+    title:  'MySql',
+    percentage: '70',
+  },
+
+  {
+    id: 8,
+    title:  'Python',
+    percentage: '60',
+  },
+
+  {
+    id: 9,
+    title:  'Bash',
+    percentage: '48',
+  },
+
+  {
+    id: 10,
     title: 'React',
     percentage: '50',
+  },
+
+  {
+    id: 11,
+    title:  'C',
+    percentage: '90',
+  },
+
+  {
+    id: 12,
+    title:  'C++',
+    percentage: '80',
+  },
+
+  {
+    id: 13,
+    title:  'Java',
+    percentage: '60',
+  },
+
+  {
+    id: 14,
+    title:  'Linux',
+    percentage: '70',
   },
 ];
 
@@ -255,27 +279,27 @@ export const portfolio = [
   {
     id: 1,
     img: Work1,
-    title: 'Photo Editing',
+    title: 'Web Development',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Photo',
+        desc: 'Calculator',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Myself',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Photoshop',
+        desc: 'HTML, CSS, JavaScript',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: '<a href="https://syagyesh.github.io/calculator" target="_blank">Simple Calculator </a>',
       },
     ],
   },
@@ -283,27 +307,27 @@ export const portfolio = [
   {
     id: 2,
     img: Work2,
-    title: 'Website Design',
+    title: 'Web Development',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Website',
+        desc: 'Analog Clock',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Myself',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'React JS',
+        desc: 'HTML, CSS, JavaScript',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: '<a href="https://syagyesh.github.io/analog-clock" target="_blank">Analog-Clock </a>',
       },
     ],
   },
@@ -311,27 +335,27 @@ export const portfolio = [
   {
     id: 3,
     img: Work3,
-    title: 'Video Editing',
+    title: 'Web Development',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'Web Assignment',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'BBR',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: 'HTML, CSS, JavaScript',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: '<a href="https://syagyesh.github.io/assign" target="_blank">Assignment</a>',
       },
     ],
   },
@@ -339,82 +363,82 @@ export const portfolio = [
   {
     id: 4,
     img: Work4,
-    title: 'Video Editing',
+    title: 'Java Project',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'Airline Management',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Myself',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: 'Java',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: '<a href="https://github.com/syagyesh/airline" target="_blank">Airline </a>',
       },
     ],
   },
 
-  {
-    id: 5,
-    img: Work5,
-    title: 'Landing Page',
-    details: [
-      {
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        title: 'Language : ',
-        desc: 'React JS, Node JS',
-      },
-      {
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
-      },
-    ],
-  },
+  // {
+  //   id: 5,
+  //   img: Work5,
+  //   title: 'Landing Page',
+  //   details: [
+  //     {
+  //       title: 'Project : ',
+  //       desc: 'Website',
+  //     },
+  //     {
+  //       title: 'Client : ',
+  //       desc: 'Dribble',
+  //     },
+  //     {
+  //       title: 'Language : ',
+  //       desc: 'React JS, Node JS',
+  //     },
+  //     {
+  //       title: 'Preview : ',
+  //       desc: 'www.dribble.com',
+  //     },
+  //   ],
+  // },
 
-  {
-    id: 6,
-    img: Work6,
-    title: 'Photo Editing',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Photo',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Photoshop',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dibble.com',
-      },
-    ],
-  },
+  // {
+  //   id: 6,
+  //   img: Work6,
+  //   title: 'Photo Editing',
+  //   details: [
+  //     {
+  //       icon: <FiFileText />,
+  //       title: 'Project : ',
+  //       desc: 'Photo',
+  //     },
+  //     {
+  //       icon: <FiUser />,
+  //       title: 'Client : ',
+  //       desc: 'Dribble',
+  //     },
+  //     {
+  //       icon: <FaCode />,
+  //       title: 'Language : ',
+  //       desc: 'Adobe Photoshop',
+  //     },
+  //     {
+  //       icon: <FiExternalLink />,
+  //       title: 'Preview : ',
+  //       desc: 'www.dibble.com',
+  //     },
+  //   ],
+  // },
 ];
 
 export const themes = [

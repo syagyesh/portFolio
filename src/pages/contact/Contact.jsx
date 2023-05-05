@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState, useRef } from 'react'
 import {
   FaEnvelopeOpen,
   FaPhoneSquareAlt,
@@ -9,10 +9,55 @@ import {
 } from "react-icons/fa";
 
 import {FiSend} from "react-icons/fi";
+import emailjs from '@emailjs/browser';
 
 import "./contact.css";
 
 const Contact = () => {
+
+  const formRef = useRef();
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  })
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setForm({...form, [name]: value})
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send('service_syagyesh','template_y2pnz0m', {
+      from_name: form.name,
+      to_name: 'Yagyesh',
+      from_email: form.email,
+      to_email: 'syagyesh91@gmail.com',
+      subject: form.subject,
+      message: form.message,
+    },'md7YQtS7gAPV6BIM1'
+    )
+    .then(() => {
+      setLoading(false);
+      alert("Thank you. I'll reply soon.");
+
+      setForm({
+        name: '',
+        email:'',
+        message: '',
+      })
+    }, (error) => {
+      setLoading(false);
+      alert("Something went wrong.");
+    })
+  }
+
   return (
     <section className="contact section">
       <h2 className="section__title">Get In <span>Touch</span></h2>
@@ -58,23 +103,24 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <form action='' className="contact__form">
+        <form ref={formRef} onSubmit={handleSubmit} className="contact__form">
           <div className="form__input-group">
             <div className="form__input-div">
-              <input type="text" placeholder='Your Name' className="form__control" />
+              <input type="text" placeholder='Your Name' name='name' className="form__control" value={form.name} onChange={handleChange} required/>
             </div>
             <div className="form__input-div">
-              <input type="email" placeholder='Your Email' className="form__control" />
+              <input type="email" placeholder='Your Email' name='email' className="form__control" value={form.email} onChange={handleChange} required/>
             </div>
             <div className="form__input-div">
-              <input type="text" placeholder='Your Subject' className="form__control" />
+              <input type="text" placeholder='Your Subject' name='subject' className="form__control" value={form.subject} onChange={handleChange} required/>
             </div>
           </div>
           <div className="form__input-div">
-              <textarea name="" id="" cols="30" rows="10" placeholder='Your Message' className="form__control textarea"></textarea>
+              <textarea name="message" id="" cols="30" rows="10" placeholder='Your Message' className="form__control textarea" value={form.message} 
+              onChange={handleChange} required></textarea>
           </div>
-          <button className="button">
-            Send Message
+          <button className="button" type='submit' value='send'>
+            {loading ? "Sending..." : "Send Message" }
             <span className="button__icon contact__button-icon">
               <FiSend />
             </span>

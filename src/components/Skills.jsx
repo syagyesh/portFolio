@@ -2,6 +2,7 @@ import React from 'react';
 import {skills} from "../data";
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import parse from "html-react-parser";
 
 const Skills = () => {
   return (
@@ -10,7 +11,7 @@ const Skills = () => {
         return (
             <div className="progress__box" key={index}>
                 <div className="progress__circle">
-                  <CircularProgressbar strokeWidth={5.5} text={`${percentage}%`} 
+                  <CircularProgressbar strokeWidth={5.5} text={`${parse(percentage)}%`} 
                   value={percentage} />
                 </div>
                 <h3 className="skills__title">{title}</h3>
