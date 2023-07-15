@@ -13,8 +13,6 @@ import Work1 from './assets/project-1.png';
 import Work2 from './assets/project-2.png';
 import Work3 from './assets/project-3.png';
 import Work4 from './assets/project-4.png';
-import Work5 from './assets/project-5.jpg';
-import Work6 from './assets/project-6.jpg';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -166,7 +164,7 @@ export const resume = [
     category: 'education',
     icon: <FaGraduationCap />,
     year: '2020-PRESENT',
-    title: 'Engineering Degree <span> IIT Chandloi </span>',
+    title: 'Engineering Degree <span> Government Engineering College Jhalawar </span>',
     desc: 'Persuing B.Tech in Computer Science and Engineering. Currently in 3rd Year, CGPA: 9.5',
   },
 
@@ -387,58 +385,6 @@ export const portfolio = [
       },
     ],
   },
-
-  // {
-  //   id: 5,
-  //   img: Work5,
-  //   title: 'Landing Page',
-  //   details: [
-  //     {
-  //       title: 'Project : ',
-  //       desc: 'Website',
-  //     },
-  //     {
-  //       title: 'Client : ',
-  //       desc: 'Dribble',
-  //     },
-  //     {
-  //       title: 'Language : ',
-  //       desc: 'React JS, Node JS',
-  //     },
-  //     {
-  //       title: 'Preview : ',
-  //       desc: 'www.dribble.com',
-  //     },
-  //   ],
-  // },
-
-  // {
-  //   id: 6,
-  //   img: Work6,
-  //   title: 'Photo Editing',
-  //   details: [
-  //     {
-  //       icon: <FiFileText />,
-  //       title: 'Project : ',
-  //       desc: 'Photo',
-  //     },
-  //     {
-  //       icon: <FiUser />,
-  //       title: 'Client : ',
-  //       desc: 'Dribble',
-  //     },
-  //     {
-  //       icon: <FaCode />,
-  //       title: 'Language : ',
-  //       desc: 'Adobe Photoshop',
-  //     },
-  //     {
-  //       icon: <FiExternalLink />,
-  //       title: 'Preview : ',
-  //       desc: 'www.dibble.com',
-  //     },
-  //   ],
-  // },
 ];
 
 export const themes = [

@@ -12,11 +12,12 @@ const Home = () => {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['Web-Developer','Front-End-Developer', 'Freelancer', 'UI Designer'],
+            strings: ['Web-Developer','Front-End-Developer', 'Freelancer'],
             typeSpeed: 60,
             backSpeed: 100,
             backDelay: 2000,
             loop: true,
+            showCursor: false,
         });
 
         return () => {
