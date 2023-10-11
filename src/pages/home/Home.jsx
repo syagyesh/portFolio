@@ -1,5 +1,5 @@
 import React , {useEffect, useRef} from 'react'
-import Profile from "../../assets/home.jpg";
+import Profile from "../../assets/userphoto.png";
 import { Link } from 'react-router-dom';
 import {FaArrowRight} from "react-icons/fa";
 import "./home.css";
